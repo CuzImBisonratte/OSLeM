@@ -1,0 +1,20 @@
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        /* Colors */
+        --background-primary: #131416;
+        --background-secondary: #282b2f;
+        --text-primary: #e0e0e0;
+        --text-secondary: #dee0e3;
+    }
+
+    .dark-hidden {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .light-hidden {
+        display: none;
+    }
+}
