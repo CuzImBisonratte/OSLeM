@@ -1,8 +1,12 @@
+<?php
+include $_SERVER['DOCUMENT_ROOT'] . '/res/php/functions.php'; # Load helper functions 
+?>
+
 <!DOCTYPE html>
 <html lang="de">
 
 <head>
-	<?php include './res/snippets/head.html'; ?>
+	<?php loadSnippet('head'); ?>
 </head>
 
 <body>
