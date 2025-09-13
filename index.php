@@ -3,7 +3,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/res/php/functions.php'; # Load helper func
 ?>
 
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="global-container">
 
 <head>
     <?php loadSnippet('head'); ?>
@@ -22,6 +22,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/res/php/functions.php'; # Load helper func
     </header>
     <nav>
         <div class="nav-top">
+            <a href="/pages/dashboard" target="main-frame" class="nav-link" data-active="active" data-tooltip="Dashboard" data-tooltip-location="right">
+                <?php loadIcon('home'); ?>
+            </a>
             <a href="/pages/heartbeat" target="main-frame" class="nav-link" data-tooltip="Heartbeat check" data-tooltip-location="right">
                 <?php loadIcon('bell-alert'); ?>
             </a>
@@ -44,7 +47,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/res/php/functions.php'; # Load helper func
             </a>
         </div>
     </nav>
-    <main></main>
+    <main>
+        <iframe src="/pages/dashboard" name="main-frame" frameborder="0"></iframe>
+    </main>
+    <?php loadJavascript('nav'); ?>
 </body>
 
 </html>
