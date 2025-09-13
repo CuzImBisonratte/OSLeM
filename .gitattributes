@@ -1,0 +1,9 @@
+# Analyze all files for language statistics
+*.js linguist-detectable
+*.css linguist-detectable
+*.php linguist-detectable
+*.png linguist-detectable
+*.svg linguist-detectable
+*.html linguist-detectable
+*.woff2 linguist-detectable
+*.webmanifest linguist-detectable
