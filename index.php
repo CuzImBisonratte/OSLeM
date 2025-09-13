@@ -22,7 +22,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/res/php/functions.php'; # Load helper func
     </header>
     <nav>
         <div class="nav-top">
-            <a href="/pages/heartbeat" target="main-frame" class="nav-link" data-active="active" data-tooltip="Heartbeat check" data-tooltip-location="right">
+            <a href="/pages/heartbeat" target="main-frame" class="nav-link" data-tooltip="Heartbeat check" data-tooltip-location="right">
                 <?php loadIcon('bell-alert'); ?>
             </a>
             <a href="/pages/access-control" target="main-frame" class="nav-link" data-tooltip="Access Control" data-tooltip-location="right">

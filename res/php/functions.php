@@ -28,3 +28,13 @@ function loadIcon($name, $class = '')
     }
     return false;
 }
+
+function loadJavascript($name)
+{
+    $fullPath = $_SERVER['DOCUMENT_ROOT'] . '/res/js/' . $name;
+    if (file_exists($fullPath . '.js')) {
+        echo '<script src="/res/js/' . $name . '.js"></script>';
+        return true;
+    }
+    return false;
+}
