@@ -13,7 +13,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/res/php/functions.php'; # Load helper func
 
 <body>
     <div class="container feedbackform">
-        <h1>Here you can send feedback directly to the OSLeM developer:</h1>
+        <h2>Here you can send feedback directly to the OSLeM developer:</h2>
         <form action="https://feedback.oslem.de/send.php" method="post">
             <div class="name">
                 <div class="input-container">
@@ -42,6 +42,14 @@ include $_SERVER['DOCUMENT_ROOT'] . '/res/php/functions.php'; # Load helper func
             <input hidden type="text" name="backlink" value="<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">
             <button type="submit" class="link-button" tabindex="0">Send Feedback to OSLeM.de</button>
         </form>
+    </div>
+    <div class="container feedbackhistory">
+        <h2>Feedback you've sent in the past:</h2>
+        <div class="history-list empty">
+            <!-- This needs to be only shown when empty, along with the class which styles it -->
+            <?php loadIcon('x-mark'); ?>
+            <p>You haven't sent any feedback yet.</p>
+        </div>
     </div>
 </body>
 

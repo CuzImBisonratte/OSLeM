@@ -1,11 +1,11 @@
 body {
     background-color: transparent;
     padding: 16px;
-}
 
-.container {
-    padding: 16px;
-    border: 1px solid var(--background-secondary);
-    border-radius: 4px;
-    width: 100%;
+    & .container {
+        padding: 16px;
+        border: 1px solid var(--background-secondary);
+        border-radius: 4px;
+        width: 100%;
+    }
 }

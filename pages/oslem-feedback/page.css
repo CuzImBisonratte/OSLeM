@@ -1,63 +1,99 @@
-.feedbackform {
-    height: 50%;
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "feedbackform"
+        "feedbackhistory";
 
-    & h1 {
-        font-size: 1.5rem;
+    & h2 {
+        font-size: 1.2rem;
         margin: 0 0 1rem;
-        font-weight: 600;
+        font-weight: 400;
     }
 
-    & form {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: calc(32px + 1rem) calc(32px + 1rem) 1fr calc(32px + 1rem);
-        grid-template-areas: "name email" "title title" "message message" "submit submit";
-        height: calc(100% - 48px);
+    & .feedbackform {
+        grid-area: feedbackform;
 
-        & .name {
-            grid-area: name;
-        }
 
-        & .email {
-            grid-area: email;
-        }
+        & form {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: calc(32px + 1rem) calc(32px + 1rem) 1fr calc(32px + 1rem);
+            grid-template-areas: "name email" "title title" "message message" "submit submit";
+            height: calc(100% - 48px);
 
-        & .title {
-            grid-area: title;
-        }
+            & .name {
+                grid-area: name;
+            }
 
-        & .message {
-            grid-area: message;
+            & .email {
+                grid-area: email;
+            }
 
-            & textarea {
-                width: 100%;
-                padding: 0.5rem;
+            & .title {
+                grid-area: title;
+            }
+
+            & .message {
+                grid-area: message;
+
+                & textarea {
+                    width: 100%;
+                    padding: 0.5rem;
+                    font-size: 1rem;
+                    resize: none;
+                }
+
+                & .input-container {
+                    height: 100%;
+                }
+            }
+
+            & button[type="submit"] {
+                grid-area: submit;
+                background-color: var(--background-secondary);
+                color: white;
+                border: none;
+                padding: 0.75rem 1.5rem;
                 font-size: 1rem;
-                resize: none;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: background-color 0.2s;
             }
 
-            & .input-container {
-                height: 100%;
+            & button[type="submit"]:hover,
+            & button[type="submit"]:focus {
+                background-color: var(--link-active);
+                outline: none;
             }
         }
+    }
 
-        & button[type="submit"] {
-            grid-area: submit;
-            background-color: var(--background-secondary);
-            color: white;
-            border: none;
-            padding: 0.75rem 1.5rem;
-            font-size: 1rem;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
+    & .feedbackhistory {
+        grid-area: feedbackhistory;
 
-        & button[type="submit"]:hover,
-        & button[type="submit"]:focus {
-            background-color: var(--link-active);
-            outline: none;
+        & .history-list {
+
+            &.empty {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: calc(100% - 2.2rem);
+                color: var(--text-secondary);
+                font-size: 1.2rem;
+                font-style: italic;
+                gap: 8px;
+
+                & svg {
+                    width: 32px;
+                    height: 32px;
+                    color: var(--link-active);
+                }
+            }
         }
     }
 }
