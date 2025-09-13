@@ -8,13 +8,4 @@
         --text-secondary: #99A0A8;
     }
 
-    .dark-hidden {
-        display: none;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    .light-hidden {
-        display: none;
-    }
 }

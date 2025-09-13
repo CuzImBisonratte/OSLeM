@@ -12,8 +12,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/res/php/functions.php'; # Load helper func
 <body>
     <header>
         <div class="header-left">
-            <img src="/res/images/logo.light.svg" class="light-hidden logo" alt="">
-            <img src="/res/images/logo.svg" class="dark-hidden logo" alt="">
+            <img src="/res/images/logo/logo.svg" class="logo" alt="">
             <h1>OSLeM</h1>
         </div>
         <div class="header-right">
