@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=for-the-badge" alt="Gitmoji" /> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/cuzimbisonratte/oslem?style=for-the-badge"> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/cuzimbisonratte/oslem?style=for-the-badge">
+<img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=for-the-badge" alt="Gitmoji" /> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/cuzimbisonratte/oslem?style=for-the-badge"> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/cuzimbisonratte/oslem?style=for-the-badge"> <img alt="Icon Source: heroicons.com" src="https://img.shields.io/badge/Icons-heroicons.com-8b5cf6?style=for-the-badge">
 
 # OSLeM - Open Source Legacy Manager
 

@@ -1,0 +1,46 @@
+nav {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas: "nav-top" "nav-bottom";
+    height: calc(100dvh - 16px - 50px);
+    padding: 8px 0;
+}
+
+nav>div {
+    background-color: var(--background-primary);
+    height: 100%;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-top {
+    grid-area: nav-top;
+    justify-content: start;
+}
+
+.nav-bottom {
+    grid-area: nav-bottom;
+    margin-top: auto;
+    justify-content: end;
+}
+
+.nav-link {
+    display: block;
+    padding: 8px;
+}
+
+.nav-link svg {
+    width: 24px;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+}
+
+.nav-link[data-active] svg {
+    color: var(--link-active);
+}
+
+.nav-link:not([data-active]):hover svg {
+    color: var(--text-primary);
+}
