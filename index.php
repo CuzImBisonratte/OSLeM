@@ -22,24 +22,24 @@ include $_SERVER['DOCUMENT_ROOT'] . '/res/php/functions.php'; # Load helper func
     </header>
     <nav>
         <div class="nav-top">
-            <a href="/pages/alert" target="main-frame" class="nav-link" data-active="active">
+            <a href="/pages/heartbeat" target="main-frame" class="nav-link" data-active="active" data-tooltip="Heartbeat check" data-tooltip-location="right">
                 <?php loadIcon('bell-alert'); ?>
             </a>
-            <a href="/pages/access-control" target="main-frame" class="nav-link">
+            <a href="/pages/access-control" target="main-frame" class="nav-link" data-tooltip="Access Control" data-tooltip-location="right">
                 <?php loadIcon('user-group'); ?>
             </a>
-            <a href="/pages/helpdoc-tool" target="main-frame" class="nav-link">
+            <a href="/pages/helpdoc-tool" target="main-frame" class="nav-link" data-tooltip="Emergency Document" data-tooltip-location="right">
                 <?php loadIcon('clipboard-document-list'); ?>
             </a>
-            <a href="/pages/file-manager" target="main-frame" class="nav-link">
+            <a href="/pages/file-manager" target="main-frame" class="nav-link" data-tooltip="File Manager" data-tooltip-location="right">
                 <?php loadIcon('archive-box'); ?>
             </a>
         </div>
         <div class="nav-bottom">
-            <a href="/pages/settings" target="main-frame" class="nav-link">
+            <a href="/pages/settings" target="main-frame" class="nav-link" data-tooltip="Settings" data-tooltip-location="right">
                 <?php loadIcon('cog-8-tooth'); ?>
             </a>
-            <a href="/pages/oslem-feedback" target="main-frame" class="nav-link">
+            <a href="/pages/oslem-feedback" target="main-frame" class="nav-link" data-tooltip="Provide Feedback" data-tooltip-location="right">
                 <?php loadIcon('chat-bubble-oval-left'); ?>
             </a>
         </div>
