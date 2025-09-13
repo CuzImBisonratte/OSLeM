@@ -49,6 +49,32 @@ include $_SERVER['DOCUMENT_ROOT'] . '/res/php/functions.php'; # Load helper func
     <main>
         <iframe src="/pages/dashboard" name="main-frame" frameborder="0"></iframe>
     </main>
+    <style>
+        .global-container>body {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            grid-template-rows: 50px 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "header header"
+                "nav main";
+        }
+
+        header {
+            grid-area: header;
+            background-color: var(--background-secondary);
+        }
+
+        nav {
+            grid-area: nav;
+            border-right: 1px solid var(--background-secondary);
+        }
+
+        main {
+            grid-area: main;
+        }
+    </style>
     <?php loadJavascript('nav'); ?>
 </body>
 
